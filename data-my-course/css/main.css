@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700&display=swap");
+
+*{
+    font-family: "Work Sans", sans-serif;
+    list-style: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+}
+
+body{
+    background-color: #CBF1F5;
+}
+
+/* NAVBAR START */
+.navbar {
+    padding: 0px;
+}
+  
+@media (max-width: 991.98px) {
+    .navbar {
+      padding: 25px 0;
+      background: white;
+    }
+}
+  
+.navbar.active {
+    background: #EEEEEE;
+    -webkit-box-shadow: 0px 1px 6px rgba(131, 130, 130, 0.4);
+            box-shadow: 0px 1px 6px rgba(131, 130, 130, 0.4);
+    padding: 10px 0;
+}
+  
+.navbar .nav-link {
+    margin-right: 40px;
+    font-weight: 500;
+    color: #222831 !important;
+}
+  
+.navbar .nav-link.active {
+    font-weight: 700;
+    color: #00ADB5 !important;
+}
+  
+.navbar .nav-link.active:hover {
+    color: #df3e3e !important;
+} 
+/* NAVBAR END */
+
+/* JUDUL START */
+.judul{
+    margin-top: 100px;
+}
+
+@media (max-width: 991.98px) {
+    .judul {
+      margin-top: 150px;
+    }
+}
+/* JUDUL END */
+
+/* SERVICE START */
+.service{
+    margin-top: 50px;
+}
+
+.service .label-service{
+    display: inline-block;
+    background-color: #00ADB5;
+    border: 5px solid #00ADB5;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.service .heading-service{
+    font-weight: 800;
+    font-size: 36px;
+    color: #112D4E;
+}
+
+.service .card{
+    position: relative;
+    border: 3px solid #3F72AF;
+    background-color: transparent;
+}
+
+.service .heading-card h3{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.service .body-card p{
+    font-size: 20px;
+}
+
+.card .orn-hover{
+    position: absolute;
+    top: 0;
+    clip-path: circle(0.0% at 50% 50%);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00ADB5;
+    z-index: -1;
+    transition: .5s ease-in-out;
+}
+
+.card:hover .orn-hover{
+   clip-path: circle(70.7% at 50% 50%);
+   transition: .4s ease-in-out;
+}
+
+.card:hover {
+    color: #EEEEEE;
+}
+/* SERVICE END */
+
+/* COURSE START */
+.course .row-course{
+    margin-top: 100px;
+}
+
+.row-course .label-course{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.row-course .heading-course{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.box-course{
+    position: relative;
+    width: 350px;
+    overflow-x: hidden;
+    border-radius: 20px;
+}
+
+.box-course img{
+    width: 100%;
+}
+
+.box-course p{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    font-size: 25px;
+    width: 60%;
+    color: #fff;
+    font-weight: 800;
+    line-height: 30px;
+    background-color: #00ADB5;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.box-course .btn-belajar{
+    position: absolute;
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00ADB5;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease-in-out;
+}
+
+.box-course:hover .btn-belajar{
+    left: 0;
+    transition: .4s ease-in-out;
+}
+
+.box-course .btn-belajar a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #3F72AF;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: #393E46;
+    animation: btnBelajar 1.5s linear infinite;
+}
+
+.box-course .btn-belajar a:hover{
+ background-color: #fff;
+ transition: .4s ease-in-out;
+
+}
+
+@keyframes btnBelajar {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+/* MENU END */
+
+/* FOOTER END */
+.footer {
+    margin-top: 100px;
+    background: #112D4E;
+    border-radius: 50px 50px 0px 0px;
+    padding: 60px 0;
+  }
+  
+  .footer p {
+    color: #EEEEEE;
+  }
+  
+  .footer .sosmed i {
+    font-size: 50px;
+  }
+  
+  .footer h3 {
+    font-size: 20px;
+    color: #F9F7F7;
+    font-weight: 700;
+  }
+  
+  .footer ul {
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .footer ul li {
+    color: #EEEEEE;
+    margin: 20px 0;
+  }
+/* FOOTER END */

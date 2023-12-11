@@ -1,0 +1,249 @@
+@import "fonts";
+@import "colors";
+@import "button";
+
+* {
+  font-family: "Work Sans", sans-serif;
+  list-style: none;
+  text-decoration: none !important;
+  transition: 0.3s ease-in-out all;
+}
+.background-blue{
+  background-color: $first-color;
+}
+
+.container {
+  max-width: 1344px;
+}
+
+.section-margin {
+  margin-top: 180px;
+}
+
+.label-section {
+  font-weight: map-get($font-weights, medium);
+  font-size: 25px;
+  color: $hitam;
+}
+
+.heading-section {
+  font-weight: map-get($font-weights, medium);
+  font-size: 40px;
+  color: $hitam;
+
+  @include media-breakpoint-down(md) {
+    font-size: 30px;
+  }
+}
+
+.subheading-section {
+  font-weight: map-get($font-weights, light);
+  font-size: 18px;
+  color: $hitam;
+
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+  }
+}
+
+//Carousel CSS
+.carousel-inner {
+  h1, p, a {
+    color: $second-color;
+  }
+}
+
+
+// HOME CSS
+.home {
+  margin-top: 180px;
+  height: 100%;
+
+  .container-fluid {
+    background-color: $first-color;
+    
+    .carousel-item {
+      height: 800px;
+    }
+    .heading-home {
+      font-size: 46px;
+      font-weight: map-get($font-weights, bold);
+
+      .prop {
+        color: $button-color;
+      }
+      .kre {
+        color: $button-color;
+      }
+
+      @include media-breakpoint-between(md, lg) {
+        font-size: 36px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 32px;
+      }
+    }
+    .subheading-home {
+      font-size: 20px;
+      font-weight: map-get($font-weights, light);
+
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+      }
+    }
+    .btn-home {
+      margin-top: 125px;
+      @include media-breakpoint-down(md) {
+        margin-top: 100px;
+      }
+    }
+
+    .img-home {
+      @include media-breakpoint-between(md, lg) {
+        max-width: 620px;
+        max-height: 500px;
+      }
+    }
+  }
+}
+
+//Tutor CSS
+.tutors {
+  background-color: $button-color;
+
+  .tutor-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .kartu-tutor {
+    img{
+      border: 5px solid $thirth-color;
+      width: 80%;
+      border-radius: 50%;
+    }
+    p {
+      font-weight: 800;
+       font-size: 25px;
+       text-align: center;
+       color: $hitam;
+    }
+  }
+}
+
+//Partner CSS
+.partnership{
+
+  &.section-margin{
+    @include media-breakpoint-down(md) {
+      margin-top: 200px;
+    }
+  }
+}
+
+// Kategori CSS
+.category {
+  i {
+    font-size: 50px;
+    color: $button-color;
+  }
+
+  .card {
+    border: 2px solid $first-color;
+
+    &:hover {
+      background-color: $button-color;
+
+      .category-name,
+      .class {
+        color: #fff;
+      }
+    }
+
+    .category-name {
+      font-size: 20px;
+      color: $first-color;
+    }
+    .class {
+      color: $first-color;
+    }
+  }
+}
+
+// About CSS
+.about {
+  margin-top: 180px;
+  height: 100%;
+
+  .container-fluid {
+    background-color: $first-color;
+
+    .img-box {
+      max-width: 550px;
+    }
+  }
+}
+
+// TESTI CSS
+.testi {
+  background: $first-color;
+  
+  h1 {
+    color: $second-color;
+  }
+  .card {
+    border: none;
+    background-color: $button-color;
+    color: $second-color;
+
+    .rate {
+      i {
+        font-size: 30px;
+        color: rgb(229, 229, 6);
+      }
+    }
+  }
+}
+
+//CTA CSS
+.cta {
+  margin-top: 180px;
+  height: 100%;
+
+  .container-fluid {
+    background-color: $first-color;
+  }
+  
+}
+
+// FOOTER CSS
+.footer {
+  background: $thirth-color;
+  border-radius: 50px 50px 0px 0px;
+  padding: 60px 0;
+
+  p {
+    color: $second-color;
+  }
+  .sosmed {
+    i {
+      font-size: 50px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    color: #F9F7F7;
+    font-weight: map-get($font-weights, bold);
+  }
+
+  ul {
+    padding: 0;
+    margin-top: 20px;
+
+    li {
+      color: $second-color;
+      margin: 20px 0;
+    }
+  }
+}

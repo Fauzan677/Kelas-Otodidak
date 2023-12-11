@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kelas Otodidak</title>
+    <link rel="icon" href="data-home/images/logo-icon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous" 
+    />
+
+    <!-- Link Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="data-home/style/main.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR START -->
+    <div class="container-fluid">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="data-home/images/logo.png" alt="" />
+            </a>
+            <button class="navbar-toggler" 
+            type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <form class="d-flex mx-lg-4 mx-0 my-lg-0 mt-4 mt-lg-0" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn-search" type="submit">Search</button>
+                </form>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" 
+                  aria-expanded="false">
+                    Our Course
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Teknologi Informasi</a></li>
+                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                    <li><a class="dropdown-item" href="#">...</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tutor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Materi</a>
+                </li>
+                <li class="menu-auth text-center mt-4 mt-lg-2">
+                  <a href="dashboard.html" class="me-4 btn-masuk d-block d-lg-inline">Masuk</a>
+                  <a href="dashboard.html" class="btn-first d-block d-lg-inline mt-3 mt-lg-0">Daftar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- HOME START -->
+    <div id="carouselExampleInterval" class="container-fluid carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>    
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <section class="slide-1">
+            <div class="container-fluid">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <h1 class="heading-home">Asah Kemampuan Bidangmu Menjadi Lebih
+                      <span class="biru">Profesional</span> dan
+                      <span class="biru">Kreatif</span>
+                    </h1>
+                    <p class="subheading-home mt-3">
+                      Ambil dan temukan passion-mu disini, menjadi satu langkah awal
+                      kesuksesanmu di masa depan
+                    </p>
+        
+                    <div class="btn-home ms-auto ms-lg-5">
+                      <a href="#" class="btn-first d-block d-lg-inline"
+                        >Mulai Belajar</a
+                      >
+                      <a
+                        href="#"
+                        class="btn-second ms-0 ms-lg-4 d-block d-lg-inline mt-4 mt-lg-0"
+                        >Explore More</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="img-home mt-5 mx-auto mt-lg-0 mx-lg-0">
+                      <img src="data-home/images/slide-1.png" class="img-fluid" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <section class="slide-2">
+            <div class="container-fluid">
+              <div class="container">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-7">
+                    <div class="img-box">
+                      <img src="data-home/images/slide-2.png" class="img-fluid" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-md-5 mt-5 mt-sm-0">
+                    <h1 class="heading-section">
+                      Platform Pelatihan Online Terbaik Kini Telah Hadir
+                    </h1>
+                    <p class="subheading-section">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id morbi
+                      purus lacus diam at mi in facilisis commodo.
+                    </p>
+                    <p class="subheading-section">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id morbi
+                      purus lacus diam at mi in facilisis commodo.
+                    </p>
+                    <a href="#" class="btn-first mb-5 mb-lg-0 mt-5 d-inline-block">Baca selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="carousel-item">
+          <section class="slide-3">
+            <div class="container-fluid">
+              <div class="container">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-5">
+                    <h1 class="heading-section">
+                      Get Ready to Learn and Grow Your Skill
+                    </h1>
+                    <p class="subheading-section mt-5">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id morbi
+                      purus lacus diam at mi in facilisis commodo.
+                    </p>
+                    <p class="subheading-section">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id morbi
+                      purus lacus diam at mi in facilisis commodo.
+                    </p>
+                    <a href="#" class="btn-first mt-5 d-inline-block">Mulai belajar sekarang</a>
+                  </div>
+                  <div class="col-md-7 text-end">
+                    <img src="data-home/images/slide-3.png" class="img-fluid" alt="" />
+                  </div>
+                </div>
+              </div>
+            </section>
+            </div>  
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <!-- HOME END -->
+
+    <!-- CATEGORY START -->
+    <section class="category section-margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center">
+            <i class="bx bxs-check-square"></i>
+            <h1 class="label-section ms-2">Course Populer</h1>
+          </div>
+          <div class="col-md-6 text-md-end mt-4 mt-sm-0">
+            <a href="#" class="btn-second">Course lainnya</a>
+          </div>
+        </div>
+        <div class="row row-card mt-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="card-body d-flex py-5 px-4 align-items-center justify-content-center">
+                <img src="data-home/images/icon-uiux.png" class="me-2" alt="" />
+                <div class="detail ms-2">
+                  <h3 class="category-name">UIUX Design</h3>
+                  <p class="class m-0">32 kelas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-3 mt-sm-0">
+            <div class="card">
+              <div
+                class="card-body d-flex py-5 px-4 align-items-center justify-content-center"
+              >
+                <img src="data-home/images/icon-writer.png" alt="" />
+                <div class="detail ms-2">
+                  <h3 class="category-name">Content Writer</h3>
+                  <p class="class m-0">23 kelas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-3 mt-lg-0">
+            <div class="card">
+              <div
+                class="card-body d-flex py-5 px-4 align-items-center justify-content-center"
+              >
+                <img src="data-home/images/icon-creator.png" alt="" />
+                <div class="detail ms-2">
+                  <h3 class="category-name">Content Creator</h3>
+                  <p class="class m-0">27 kelas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-3 mt-lg-0">
+            <div class="card">
+              <div
+                class="card-body d-flex py-5 px-4 align-items-center justify-content-center"
+              >
+                <img src="data-home/images/icon-trading.png" alt="" />
+                <div class="detail ms-2">
+                  <h3 class="category-name">Trading</h3>
+                  <p class="class m-0">18 kelas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CATEGORY END -->
+
+    <!-- TUTOR START-->
+    <section class="tutors section-margin">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="tengah">
+              <div class="col-12 justify-content-between text-center">
+                  <h1>Our Top Tutors</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, optio!</p>
+              </div>
+              <div class="tutor-list my-5">
+                <div class="row text-center">
+                  <div class="kartu-tutor col-6 col-lg-3">
+                    <img src="https://dfu1k3y1rami2.cloudfront.net/wp-content/uploads/2014/07/26195109/2020_cb.jpg"/>
+                    <p>Jason Lee Scott</p>
+                  </div>
+                  <div class="kartu-tutor col-6 col-lg-3">
+                    <img src="https://images.ctfassets.net/1wryd5vd9xez/4DxzhQY7WFsbtTkoYntq23/a4a04701649e92a929010a6a860b66bf/https___cdn-images-1.medium.com_max_2000_1_Y6l_FDhxOI1AhjL56dHh8g.jpeg"/>
+                    <p>John Doe</p>
+                  </div>
+                  <div class="kartu-tutor col-6 col-lg-3">
+                    <img src="https://blogs-images.forbes.com/jackkelly/files/2019/06/Jack-Kelly_avatar_1559658819-400x400.jpg"/>
+                    <p>Bruce Wills</p>
+                  </div>
+                  <div class="kartu-tutor col-6 col-lg-3">
+                    <img src="https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto/fc/3021752-inline-i-1-why-square-designed-its-new-offices-to-work-like-a-city.jpg"/>
+                    <p>Michael Dell</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TUTOR END-->
+
+    <!-- TESTI START -->
+    <section class="testi section-margin py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h1 class="label-section"> Apa Kata Mereka Yang Sudah Menyelesaikan Kelas di Kelas Otodidak? </h1>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12">
+            <!-- Swiper -->
+            <div class="swiper mySwiperTesti">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card p-4">
+                  <div class="card-body">
+                    <div class="rate">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p class="body-testi mt-3">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Facere, quod!
+                    </p>
+
+                    <div
+                      class="detail d-flex justify-content-between align-items-center">
+                      <div class="user d-flex align-items-center mt-4">
+                        <img
+                          src="data-home/images/testi.png"
+                          class="rounded-circle img-fluid"
+                          alt=""
+                        />
+                        <div class="profile ms-3">
+                          <p class="name m-0">Kathryn Murphy</p>
+                          <p class="status m-0">UI/UX Designer</p>
+                        </div>
+                      </div>
+                      <div class="icon-quote">
+                        <i class="bx bxs-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card p-4">
+                  <div class="card-body">
+                    <div class="rate">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p class="body-testi mt-3">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Facere, quod!
+                    </p>
+
+                    <div
+                      class="detail d-flex justify-content-between align-items-center"
+                    >
+                      <div class="user d-flex align-items-center mt-4">
+                        <img
+                          src="data-home/images/testi.png"
+                          class="rounded-circle img-fluid"
+                          alt=""
+                        />
+                        <div class="profile ms-3">
+                          <p class="name m-0">Kathryn Murphy</p>
+                          <p class="status m-0">UI/UX Designer</p>
+                        </div>
+                      </div>
+                      <div class="icon-quote">
+                        <i class="bx bxs-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card p-4">
+                  <div class="card-body">
+                    <div class="rate">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p class="body-testi mt-3">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Facere, quod!
+                    </p>
+
+                    <div
+                      class="detail d-flex justify-content-between align-items-center"
+                    >
+                      <div class="user d-flex align-items-center mt-4">
+                        <img
+                          src="data-home/images/testi.png"
+                          class="rounded-circle img-fluid"
+                          alt=""
+                        />
+                        <div class="profile ms-3">
+                          <p class="name m-0">Kathryn Murphy</p>
+                          <p class="status m-0">UI/UX Designer</p>
+                        </div>
+                      </div>
+                      <div class="icon-quote">
+                        <i class="bx bxs-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card p-4">
+                  <div class="card-body">
+                    <div class="rate">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p class="body-testi mt-3">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Facere, quod!
+                    </p>
+
+                    <div
+                      class="detail d-flex justify-content-between align-items-center"
+                    >
+                      <div class="user d-flex align-items-center mt-4">
+                        <img
+                          src="data-home/images/testi.png"
+                          class="rounded-circle img-fluid"
+                          alt=""
+                        />
+                        <div class="profile ms-3">
+                          <p class="name m-0">Kathryn Murphy</p>
+                          <p class="status m-0">UI/UX Designer</p>
+                        </div>
+                      </div>
+                      <div class="icon-quote">
+                        <i class="bx bxs-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTI END -->
+
+    <!-- PARTNERSHIP START -->
+    <section class="partnership section-margin">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h1 class="label-section">Our Partnership</h1>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center text-center">
+          <div class="col-lg-2 col-md-6">
+            <img src="data-home/images/partner1.png" alt="" />
+          </div>
+          <div class="col-lg-2 col-md-6 mt-4 mt-sm-0">
+            <img src="data-home/images/partner2.png" alt="" />
+          </div>
+          <div class="col-lg-2 col-md-6 mt-4 mt-sm-0">
+            <img src="data-home/images/partner3.png" alt="" />
+          </div>
+          <div class="col-lg-2 col-md-6 mt-4 mt-sm-0">
+            <img src="data-home/images/partner4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PARTNERSHIP END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer section-margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <img src="data-home/images/Logo.png" alt="" />
+            <a href="#" class="d-block mt-3 text-white">help@KelasOtodidak.com</a>
+            <p>(0123) 456789</p>
+            <div class="sosmed mt-4">
+              <a href="#"><i class="bx bxl-whatsapp text-white"></i></a>
+              <a href="#"><i class="bx bxl-instagram text-white mx-3"></i></a>
+              <a href="#"><i class="bx bxl-facebook text-white"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 mt-4 mt-sm-0">
+            <h3>Payment</h3>
+            <ul>
+              <li>
+                <img src="data-home/images/bca.png" alt="" />
+              </li>
+              <li>
+                <img src="data-home/images/bri.png" alt="" />
+              </li>
+              <li>
+                <img src="data-home/images/bni.png" alt="" />
+              </li>
+              <li>
+                <img src="data-home/images/mandiri.png" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 mt-4 mt-sm-0">
+            <h3>Information</h3>
+            <ul>
+              <li>Office Hours</li>
+              <li>Requirements</li>
+              <li>About us</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 mt-4 mt-sm-0">
+            <h3>Helpfull Link</h3>
+            <ul>
+              <li>Service</li>
+              <li>Support</li>
+              <li>Terms & Condition</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 mt-4 mt-sm-0">
+            <h3>Address</h3>
+            <p>Jl Sidomoyo, Godean, Sleman, Daerah Istimewa Yogyakarta</p>
+            <a href="#">Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Link JS Bootsrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Link JS -->
+    <script src="data-home/script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+  list-style: none;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  background-color: #CBF1F5;
+}
+
+.btn-first {
+  padding: 15px 30px;
+  font-weight: 600;
+  background-color: #393E46;
+  color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.btn-first:hover {
+  background-color: #984c0c;
+  color: #adb5bd;
+}
+
+@media (max-width: 1399.98px) {
+  .btn-first {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .btn-second {
+    padding: 10px 20px;
+  }
+}
+
+/* NAVBAR CSS START */
+.navbar {
+  padding: 0px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 25px 0;
+    background: white;
+  }
+}
+
+.navbar.active {
+  background: #EEEEEE;
+  -webkit-box-shadow: 0px 1px 6px rgba(131, 130, 130, 0.4);
+          box-shadow: 0px 1px 6px rgba(131, 130, 130, 0.4);
+  padding: 10px 0;
+}
+
+.navbar .nav-link {
+  margin-right: 40px;
+  font-weight: 500;
+  color: #222831 !important;
+}
+
+.navbar .nav-link.active {
+  font-weight: 700;
+  color: #00ADB5 !important;
+}
+
+.navbar .nav-link.active:hover {
+  color: #df3e3e !important;
+}
+/* NAVBAR CSS END */
+
+/* JUDUL CSS START */
+.judul{
+  margin-top: 100px;
+}
+
+@media (max-width: 820px) {
+  .judul {
+    margin-top: 140px;
+  }
+}
+/* JUDUL CSS END */
+
+/* BANNER CSS START */
+.banner {
+  margin-top: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .banner {
+    margin-top: 70px !important;
+  }
+}
+
+.banner .card .card-body {
+  background-color: #CBF1F5;
+}
+
+.banner .card .detail {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.banner .card .detail h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+/* BANNER CSS END */
+
+/* TUTOR CSS START */
+.tutor {
+  margin-top: 50px;
+}
+
+.tutor-wrapper .row1{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.row1 .label-tutor{
+  font-size: 20px;
+  font-weight: 700;
+}
+.row1 .heading-tutor{
+  font-size: 40px;
+  font-weight: 700;
+  color: #4a4a4a;
+  margin-top: 10px;
+}
+.row1 .toggle-slider i{
+  font-size: 60px;
+  cursor: pointer;
+}
+.tutor-wrapper .row2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.tutor-wrapper .card-tutor {
+  position: relative;
+  width: 400px;
+  border-radius: 20px;
+  overflow-y: hidden;
+}
+.row2 .detail-tutor{
+  background-color: rgba(255, 255, 255, 0.637);
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 30px;
+  border-radius: 20px;
+  border: 3px solid #fff;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.171);
+  transition: .5s ease-in-out;
+}
+.card-tutor:hover .detail-tutor{
+  bottom: 0;
+  transition: .5s ease-in-out;
+}
+.detail-tutor .kategori{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.kategori .label-kategori{
+  padding: 5px 20px;
+  background-color: #393E46;
+  color: #fff;
+  border-radius: 5px;
+}
+.kategori .price{
+  background-color: #00ADB5;
+  color: #fff;
+  width: 90px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-tutor .title-card h1{
+  font-size: 30px;
+  font-size: 600;
+  color: #4a4a4a;
+}
+.detail-tutor .review{
+  display: flex;
+  gap: 10px;
+}
+.review i{
+  color: rgb(224, 224, 12);
+}
+
+.detail-tutor .body-card{
+  margin: 25px 0;
+}
+.detail-tutor .btn-tutor{
+  background-color: #393E46;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 50px;
+}
+.btn-tutor:hover {
+  background-color: #984c0c;
+}
+.btn-tutor a{
+  color: #fff;
+}
+/* TUTOR CSS END */
+
+/* COURSE CSS START */
+.course .container{
+  margin: 0 auto;
+}
+.course .label{
+  font-size: 20px;
+  font-weight: 700;
+}
+.course .heading-section {
+  font-size: 40px;
+  font-weight: 700;
+  color: #4a4a4a;
+  margin-top: 10px;
+}
+.course .toggle-slider i{
+  font-size: 60px;
+}
+.course .card{
+  width: 18rem;
+  background: #C1FFF0;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.course .card img:hover {
+  transform: scale(1.1);
+}
+
+.course .card-title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.course .card-body .rate i{
+  color: #E6EB0F;
+  font-size: 26px;
+}
+.course .price{
+  font-size: 20px;
+  font-weight: 600;
+}
+.course .btn-card{
+  padding: 16px 17px;
+  border-radius: 30px 0px 4px;
+  text-decoration: none;
+}
+.course .btn-card i{
+  font-size: 30px;
+ color: #fff;
+}
+.course .btn-card:hover{
+  background-color: #fff;
+}
+.course.btn-card:hover i{
+  color: #0C7829;
+}
+/* COURSE CSS END */
+
+/* ACHIEVEMENT CSS START */  
+.achievement {
+  margin-top: 50px;
+}
+
+.achievement .row-title h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .achievement .row-title h1 {
+    font-size: 18px;
+  }
+}
+
+.achievement .row-card .card {
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
+  padding: 44px 38px;
+}
+
+@media (max-width: 1399.98px) {
+  .achievement .row-card .card {
+    padding: 40px 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .achievement .row-card .card {
+    padding: 30px;
+  }
+}
+
+.achievement .row-card .card:hover {
+  background-color: #00ADB5;
+  color: #fff;
+}
+
+.achievement .row-card .card:hover img {
+  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(102%);
+          filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(102%);
+}
+
+.achievement .row-card .card h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 1399.98px) {
+  .achievement .row-card .card h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .achievement .row-card .card h2 {
+    font-size: 16px;
+  }
+}
+/* ACHIEVEMENT CSS END */ 
+
+/* FOOTER CSS START */
+.footer {
+  margin-top: 200px;
+}
+
+.footer .sosmed i {
+  font-size: 40px;
+  color: #ff8947;
+}
+
+.footer ul li {
+  margin: 20px 0;
+}
+
+.footer {
+  background: #112D4E;
+  border-radius: 50px 50px 0px 0px;
+  padding: 60px 0;
+}
+
+.footer p {
+  color: #EEEEEE;
+}
+
+.footer .sosmed i {
+  font-size: 50px;
+}
+
+.footer h3 {
+  font-size: 20px;
+  color: #F9F7F7;
+  font-weight: 700;
+}
+
+.footer ul {
+  padding: 0;
+  margin-top: 20px;
+}
+
+.footer ul li {
+  color: #EEEEEE;
+  margin: 20px 0;
+}
+/* FOOTER CSS END */
